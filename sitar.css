@@ -1,0 +1,105 @@
+:root{
+    --primary-color: #5e6365;
+    --secondary-color: #434040;
+    --cream-color: #f6f6b9;
+    --button-color: #272727;
+    --text-color: #000000;
+}
+/* General body settings */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--cream-color);
+}
+
+/* Controls container */
+.controls {
+    flex: 1;
+    padding: 50px;
+    margin: 50px 80px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Title of the form */
+.controls h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Styling for the form group */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+/* General styling for selects and input (text) */
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--button-color);
+    border-radius: 5px;
+    background-color: var(--cream-color);
+    color: var(--text-color);
+}
+
+/* Styling for sliders (range inputs) */
+.form-group input[type="range"] {
+    width: 100%;
+    background: transparent;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    accent-color: var(--cream-color); /* Modern browsers: makes thumb and track orange */
+}
+
+/* Chrome & Edge */
+.form-group input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background: var(--cream-color);
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease;
+}
+
+/* Firefox */
+.form-group input[type="range"]::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    background: orange;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease;
+}
+
+
+/* Play button styling */
+.play-button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--button-color);
+    color: var(--cream-color);
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.play-button:hover {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+

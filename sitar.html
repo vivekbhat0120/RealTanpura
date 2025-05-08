@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanpura Droid</title>
+    <link rel="stylesheet" href="sitar.css"> <!-- Linking to the external CSS file -->
+</head>
+<body>
+        <!-- Form settings for tanpura controls -->
+        <div class="controls">
+            <h1>Real Tanpura</h1>
+
+            <!-- Dropdown for selecting the first string -->
+            <div class="form-group">
+                <label for="first-string">First String</label>
+                <select id="first-string">
+                    <option value="ma">Pa</option>
+                    <option value="sa">Ma</option>
+                    <option value="pa">Ni</option>
+                </select>
+            </div>
+
+            <!-- Dropdown for notation types -->
+            <div class="form-group">
+                <label for="notation">Notation</label>
+                <select id="notation">
+                    <option value="western">Western</option>
+                    <option value="indian">Indian</option>
+                </select>
+            </div>
+
+            <!-- Dropdown for pitch selection -->
+            <div class="form-group">
+                <label for="pitch">Pitch</label>
+                <select id="pitch">
+                    <option value="A" data-audio="../Audio/A Pa.mp3">A</option>
+                    <option value="A#" data-audio="../Audio/A_Pa.mp3">A#</option>
+                    <option value="B" data-audio="../Audio/B Pa.mp3">B</option>
+                    <option value="C" data-audio="../Audio/C Pa.mp3">C</option>
+                    <option value="C#" data-audio="../Audio/C_Pa.mp3">C#</option>
+                    <option value="D" data-audio="../Audio/D Pa.mp3">D</option>
+                    <option value="D#" data-audio="../Audio/D_Pa.mp3">D#</option>
+                    <option value="E" data-audio="../Audio/E Pa.mp3">E</option>
+                    <option value="F" data-audio="../Audio/F Pa.mp3">F</option>
+                    <option value="F#" data-audio="../Audio/F_Pa.mp3">F#</option>
+                    <option value="G" data-audio="../Audio/G Pa.mp3">G</option>
+                    <option value="G#" data-audio="../Audio/G_Pa.mp3">G#</option>
+                </select>
+            </div>
+
+            <!-- Controls for pitch semi adjustments -->
+            <div class="form-group">
+                <label for="pitch-semi">Pitch Semi</label>
+                <select id="pitch-semi">
+                    <!-- Options omitted for brevity -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <input id="volume" type="range" min="1" max="10" value="5" step="1">
+                <label for="volume">
+                <span id="volume-display">Volume: 5</span>
+                </label>
+            </div>
+            
+            <div class="form-group">
+                <input id="speed" type="range" min="0" max="10" value="5" step="1">
+                <label for="speed">
+                <span id="speed-display">Speed: 0</span>
+                </label>
+            </div>
+
+
+            <!-- Play button -->
+            <button id="play-button" class="play-button">Play</button>
+        </div>
+    </div>
+
+    <script src="sitar.js"></script>
+</body>
+</html>
